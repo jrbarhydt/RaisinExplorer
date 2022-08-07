@@ -6,7 +6,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Ellipse
 from sklearn.decomposition import PCA
-from plotly import graph_objects as go
 import numpy as np
 
 # ======================================================================================================================
