@@ -57,6 +57,13 @@ with st.sidebar:
     st.header("Kecimen")
     selected[1] = st.radio(label="", options=headers, key=0, index=1)
 
+    # link to other pages
+    st.markdown("---")
+    st.markdown("**More Dashboards:**")
+    st.markdown("- [Guitar Chord Explorer](https://jrbarhydt-guitarfingering-guitarfingering-zljmbo.streamlitapp.com/)")
+    st.markdown("- [Raisin Types Explorer](https://jrbarhydt-raisinexplorer-raisins-c3z4pe.streamlitapp.com/)")
+    st.markdown("- [I-94 Traffic Explorer](https://jrbarhydt-i94-traffic-traffic-sespds.streamlitapp.com/)")
+
 if selected[0] == selected[1]:
     st.write("Must chose two different axes to compare.")
 else:
@@ -98,25 +105,3 @@ else:
     ax.legend(["Kecimen", "Besni"])
 
     st.pyplot(fig, use_container_width=True)
-
-# link to other pages
-footer = """<style>
-               .footer {
-               position: fixed;
-               left: 0;
-               bottom: 0;
-               width: 100%;
-               background-color: #262730;
-               color: white;
-               text-align: center;
-               }
-            </style>
-            <div class="footer">
-               <a href="https://jrbarhydt-guitarfingering-guitarfingering-zljmbo.streamlitapp.com/">Guitar Chord Explorer</a>
-               &nbsp;&nbsp;&nbsp;
-               <a href="https://jrbarhydt-raisinexplorer-raisins-c3z4pe.streamlitapp.com/">Raisin Explorer</a>
-               &nbsp;&nbsp;&nbsp;
-               <a href="https://jrbarhydt-i94-traffic-traffic-sespds.streamlitapp.com/">I-94 Traffic Explorer</a>
-            </div>
-        """
-st.markdown(footer, unsafe_allow_html=True)
