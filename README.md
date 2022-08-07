@@ -33,7 +33,8 @@ https://doi.org/10.30855/gmbd.2020.03.03
     - python 3.9
     - streamlit
     - pandas
-    - plotly
+    - matplotlib
+    - numpy
 
 ---
 
